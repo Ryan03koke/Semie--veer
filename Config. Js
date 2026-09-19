@@ -1,0 +1,136 @@
+/**
+ * Global Configuration for My WhatsApp MD Bot
+ */
+
+module.exports = {
+    // =========================
+    // BOT OWNER
+    // =========================
+    ownerNumber: ['263788755586'],
+    ownerName: ['Semie'],
+
+    // =========================
+    // BOT CONFIGURATION
+    // =========================
+    botName: 'Semie Bot',
+    prefix: '.',
+    sessionName: 'session',
+    sessionID: process.env.SESSION_ID || '',
+
+    newsletterJid: '',
+    updateZipUrl: '',
+
+    // =========================
+    // STICKER
+    // =========================
+    packname: 'Semie Bot',
+
+    // =========================
+    // BOT BEHAVIOUR
+    // =========================
+    selfMode: false,
+    autoRead: false,
+    autoTyping: false,
+    autoBio: false,
+    autoSticker: false,
+    autoReact: false,
+    autoReactMode: 'bot',
+    autoDownload: false,
+
+    // =========================
+    // GROUP SETTINGS
+    // =========================
+    defaultGroupSettings: {
+        antilink: false,
+        antilinkAction: 'delete',
+
+        antitag: false,
+        antitagAction: 'delete',
+
+        antiall: false,
+
+        antiviewonce: false,
+
+        antibot: false,
+        antibotAction: 'warn',
+
+        anticall: false,
+
+        antigroupmention: false,
+        antigroupmentionAction: 'delete',
+
+        antigroupstatus: false,
+        antigroupstatusAction: 'delete',
+
+        antisticker: false,
+        antistickerAction: 'delete',
+
+        antibadword: false,
+        antibadwordAction: 'delete',
+
+        welcome: false,
+
+        welcomeMessage:
+            '╭━━━〔 WELCOME 〕━━━╮\n' +
+            '┃ 👋 Welcome @user\n' +
+            '┃ 👥 Members: #memberCount\n' +
+            '┃ 🏠 Group: @group\n' +
+            '╰━━━━━━━━━━━━━━━━╯\n\n' +
+            '> Powered by Semie Bot',
+
+        goodbye: false,
+
+        goodbyeMessage:
+            '👋 Goodbye @user!',
+
+        antiSpam: false,
+        antidelete: false,
+        nsfw: false,
+        detect: false,
+        chatbot: false,
+        autosticker: false
+    },
+
+    // =========================
+    // API KEYS
+    // =========================
+    apiKeys: {
+        openai: '',
+        deepai: '',
+        remove_bg: ''
+    },
+
+    // =========================
+    // MESSAGES
+    // =========================
+    messages: {
+        wait: '⏳ Please wait...',
+        success: '✅ Done!',
+        error: '❌ Something went wrong!',
+        ownerOnly: '👑 Owner only!',
+        adminOnly: '🛡️ Admin only!',
+        groupOnly: '👥 This command can only be used in groups!',
+        privateOnly: '💬 This command can only be used in private chat!',
+        botAdminNeeded: '🤖 Please make the bot an admin first!',
+        invalidCommand: '❓ Unknown command! Type .menu'
+    },
+
+    // =========================
+    // TIMEZONE
+    // =========================
+    timezone: 'Africa/Harare',
+
+    // =========================
+    // LIMITS
+    // =========================
+    maxWarnings: 3,
+
+    // =========================
+    // SOCIAL LINKS
+    // =========================
+    social: {
+        github: '',
+        instagram: '',
+        youtube: ''
+    }
+};
